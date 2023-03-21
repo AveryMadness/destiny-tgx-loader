@@ -21,7 +21,7 @@ This loader can be customized based on your hosting settings and/or preferences.
 ```javascript
 // Global Defaults
 THREE.TGXLoader.APIKey = null;
-THREE.TGXLoader.APIBasepath = "https://www.bungie.net/d1/Platform/Destiny"; // The basepath for making API requests
+THREE.TGXLoader.APIBasepath = "https://www.bungie.net/Platform/Destiny2"; // The basepath for making API requests
 THREE.TGXLoader.Basepath = "https://www.bungie.net"; // The basepath to load gear assets from
 THREE.TGXLoader.Platform = "web"; // Whether to use "web" or "mobile" gear assets (note the latter requires extra setup to use.
 THREE.TGXLoader.ManifestPath = null; // The url for server-side manifest querying. Must include $itemHash
