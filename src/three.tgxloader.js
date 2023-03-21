@@ -4,7 +4,7 @@ THREE.TGXLoader = function (manager) {
 
 // Global defaults
 THREE.TGXLoader.APIKey = "a5381160471f47be98e8ea82c54b77ed";
-THREE.TGXLoader.APIBasepath = 'https://www.bungie.net/d1/Platform/Destiny';
+THREE.TGXLoader.APIBasepath = 'https://www.bungie.net/Platform/Destiny2';
 THREE.TGXLoader.Basepath = 'https://www.bungie.net';
 THREE.TGXLoader.Platform = 'web';
 THREE.TGXLoader.ManifestPath = null;
