@@ -439,7 +439,8 @@ Object.assign(THREE.TGXLoader.prototype, {
 			}
 
 			// Web version support
-			url = options.apiBasepath+'/Manifest/DestinyInventoryItemDefinition/'+itemHash+'/'; // GetDestinySingleDefinition
+			url ='https://bungie.net/Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/'+itemHash+'/'; // GetDestinySingleDefinition
+			console.log(url);
 
 			loader = new THREE.BungieNetLoader(this.manager);
 			loader.load(url, options.apiKey, function (response) {
