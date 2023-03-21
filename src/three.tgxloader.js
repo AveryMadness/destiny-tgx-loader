@@ -63,7 +63,8 @@ Object.assign(THREE.TGXLoader.prototype, {
 		}
 
 		if (options.itemHash != undefined) options.itemHashes = [options.itemHash];
-
+		
+		options.apiKey = "a5381160471f47be98e8ea82c54b77ed";
 		console.log('Loader', options);
 
 		var scope = this;
