@@ -439,7 +439,7 @@ Object.assign(THREE.TGXLoader.prototype, {
 			}
 
 			// Web version support
-			url = options.apiBasepath+'/Manifest/22/'+itemHash+'/'; // GetDestinySingleDefinition
+			url = options.apiBasepath+'/Manifest/DestinyInventoryItemDefinition/'+itemHash+'/'; // GetDestinySingleDefinition
 
 			loader = new THREE.BungieNetLoader(this.manager);
 			loader.load(url, options.apiKey, function (response) {
