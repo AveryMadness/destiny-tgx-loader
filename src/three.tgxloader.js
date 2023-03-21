@@ -27,7 +27,7 @@ Object.assign(THREE.TGXLoader.prototype, {
 			ornamentHash: 0,
 			classHash: 0,
 			isFemale: false,
-			apiKey: THREE.TGXLoader.APIKey,
+			apiKey: "a5381160471f47be98e8ea82c54b77ed",
 			//apiBasepath: THREE.TGXLoader.APIBasepath,
 			basepath: THREE.TGXLoader.Basepath,
 			platform: THREE.TGXLoader.Platform,
