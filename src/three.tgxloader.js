@@ -9,7 +9,7 @@ THREE.TGXLoader.Basepath = 'https://www.bungie.net';
 THREE.TGXLoader.Platform = 'web';
 THREE.TGXLoader.ManifestPath = null;
 THREE.TGXLoader.DefaultAnimationPath = 'destiny_player_animation.js';
-THREE.TGXLoader.Game = 'destiny';
+THREE.TGXLoader.Game = 'destiny2';
 THREE.TGXLoader.NoCache = false;
 
 THREE.TGXLoader.EnvMapPath = null;
