@@ -452,6 +452,7 @@ Object.assign(THREE.TGXLoader.prototype, {
 
 				if (response.ErrorCode == 1) {
 					//items[itemIndex] = response.Response.data;
+					console.log(response);
 					callback(response.Response.data);
 				} else {
 					console.error('Bungie Error Response', response);
