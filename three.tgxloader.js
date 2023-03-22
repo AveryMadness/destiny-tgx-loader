@@ -292,12 +292,12 @@ THREE.TGXLoader = function (manager) {
 
 // Global defaults
 THREE.TGXLoader.APIKey = null;
-THREE.TGXLoader.APIBasepath = 'https://www.bungie.net/Platform/Destiny2';
+THREE.TGXLoader.APIBasepath = 'https://www.bungie.net/d1/Platform/Destiny';
 THREE.TGXLoader.Basepath = 'https://www.bungie.net';
-THREE.TGXLoader.Platform = 'mobile';
+THREE.TGXLoader.Platform = 'web';
 THREE.TGXLoader.ManifestPath = null;
 THREE.TGXLoader.DefaultAnimationPath = 'destiny_player_animation.js';
-THREE.TGXLoader.Game = 'destiny2';
+THREE.TGXLoader.Game = 'destiny';
 THREE.TGXLoader.NoCache = false;
 
 THREE.TGXLoader.EnvMapPath = null;
@@ -439,8 +439,7 @@ Object.assign(THREE.TGXLoader.prototype, {
 			}
 
 			// Web version support
-			url ='https://bungie.net/Platform/Destiny2/Manifest/DestinyInventoryItemDefinition/'+itemHash+'/'; // GetDestinySingleDefinition
-			console.log(url);
+			url = options.apiBasepath+'/Manifest/22/'+itemHash+'/'; // GetDestinySingleDefinition
 
 			loader = new THREE.BungieNetLoader(this.manager);
 			loader.load(url, options.apiKey, function (response) {
@@ -453,7 +452,6 @@ Object.assign(THREE.TGXLoader.prototype, {
 
 				if (response.ErrorCode == 1) {
 					//items[itemIndex] = response.Response.data;
-					console.log(response);
 					callback(response.Response.data);
 				} else {
 					console.error('Bungie Error Response', response);
@@ -4017,4 +4015,3 @@ Object.assign(THREE.TGXLoader.prototype, {
 	});
 	THREE.TGXManifest = TGXManifest;
 })();
-
